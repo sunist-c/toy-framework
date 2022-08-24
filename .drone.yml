@@ -1,0 +1,23 @@
+kind: pipeline
+name: testing
+
+clone:
+  depth: 1
+
+steps:
+  - name: unit-test
+    image: golang:1.18
+    pull: if-not-exists
+    commands:
+      - go test -v ./...
+
+  - name: benchmark-test
+    image: golang:1.18
+    pull: if-not-exists
+    commands:
+      - cd test && go test -v -bench=. -run=^$
+
+  - name: build-test
+    image: golang:1.18
+    pull: if-not-exists
+    commands: {}
