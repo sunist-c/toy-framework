@@ -1,5 +1,7 @@
 # Toy-Framework
 
+[![Build Status](https://ci.swu-acm.cn/api/badges/sunist-c/toy-framework/status.svg?ref=refs/heads/main)](https://ci.swu-acm.cn/sunist-c/toy-framework)
+
 toy-framework是[sunist-c](https://www.sunist.cn)在学习和开发的过程中，萌发的项目，主要的目的是从零开始，逐渐搭建一个HTTP/RPC服务框架。
 
 在早期，本仓库可能一直起灰，因为sunist-c可能在极度愤怒的情况下大删大改，revert很多次，所以sunist-c会在toy-framework快完成的时候，再将其提交到GitHub
