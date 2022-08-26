@@ -2,9 +2,10 @@ package test
 
 import (
 	"fmt"
-	"github.com/sunist-c/toy-framework/ds/kv"
 	"sync"
 	"testing"
+
+	"github.com/sunist-c/toy-framework/ds/kv"
 )
 
 type TestCase[Key, Value any] struct {
